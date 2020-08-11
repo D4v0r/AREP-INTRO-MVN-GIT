@@ -53,6 +53,13 @@ Para ver los calculos que el programa nos ofrece sobre nuestros datos debemos ej
 
 ### Documentación
 
+Para generar la documentación en su máquina puede ejecutar el siguiente comando:
+```
+mvn javadoc: javadoc
+```
+También puede observarla [AQUÍ](https://d4v0r.github.io/AREP-INTRO-MVN-GIT/apidocs/index.html).
+
+
 ### Entorno de Pruebas
 
 La pruebas se encuentran automatizadas utilizando el framework JUnit, puede ejecutarlas con el siguiente comando:
@@ -71,7 +78,7 @@ Este proyecto fue desarrollado con:
 
 Integración continua usando la tecnología de CircleCi:
 
-[![CircleCI](https://circleci.com/gh/D4v0r/AREP-INTRO-MVN-GIT/tree/circleci-project-setup.svg?style=svg)](https://circleci.com/gh/D4v0r/AREP-INTRO-MVN-GIT/tree/circleci-project-setup)
+[![CircleCI](https://circleci.com/gh/D4v0r/AREP-INTRO-MVN-GIT.svg?style=svg)](https://circleci.com/gh/D4v0r/AREP-INTRO-MVN-GIT)
 
 ## Autor
 
