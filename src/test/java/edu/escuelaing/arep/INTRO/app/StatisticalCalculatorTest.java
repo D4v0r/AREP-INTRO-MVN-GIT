@@ -38,9 +38,9 @@ public class StatisticalCalculatorTest extends TestCase {
     }
 
     /**
-     * Statistical calculation test 1.
+     * Statistical calculation test
+     * Test for column 1.
      */
-
     public static void statisticalCalculationTest1(){
         String[] estimateProxySize = {"160", "591", "114", "229", "230", "270", "128", "1657", "624", "1503"};
         LinkedList<Double> dataList = new LinkedList<>();
@@ -57,6 +57,10 @@ public class StatisticalCalculatorTest extends TestCase {
         }
     }
 
+    /**
+     * Statistical calculation test 2
+     * Test for column 2.
+     */
     public static void statisticalCalculationTest2(){
         String[] developmentHours = {"15.0", " 69.9",  "6.5",  "22.4", "28.4", "65.9", "19.4", "198.7", "38.8", "138.2"};
         LinkedList<Double> dataList = new LinkedList<>();
@@ -73,6 +77,10 @@ public class StatisticalCalculatorTest extends TestCase {
         }
     }
 
+    /**
+     * Statistical calculation failure
+     * Test failure when calculator's data is null.
+     */
     public static void statisticalCalculationFailure(){
         calculator.eraseData();
         try{

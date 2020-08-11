@@ -4,6 +4,9 @@ import edu.escuelaing.arep.INTRO.app.collections.LinkedList;
 
 /**
  * The type Calculator.
+ *
+ * @author Davor Cortés
+ * @version  1.0
  */
 public class Calculator {
 

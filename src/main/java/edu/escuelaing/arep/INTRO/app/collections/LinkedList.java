@@ -7,11 +7,11 @@ import java.util.Iterator;
 
 
 /**
- * The N type Linked list.
+ * Generic class representing a simple linked list of type N.
+ * @param <N> the type parameter
  *
  * @author Davor Cortés
  * @version 1.0
- * @param <N> the type parameter
  */
 public class LinkedList<N> implements Iterable<N>{
 
@@ -52,9 +52,9 @@ public class LinkedList<N> implements Iterable<N>{
 
 
     /**
-     * Remove the first element and  return his value. .
+     * Remove the first element and return its value.
      *
-     * @return the n
+     * @return the first element.
      * @throws NoSuchElementException the no such element exception
      */
     public N pop() throws NoSuchElementException{

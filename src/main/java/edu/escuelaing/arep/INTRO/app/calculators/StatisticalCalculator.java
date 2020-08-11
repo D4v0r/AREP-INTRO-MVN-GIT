@@ -15,9 +15,9 @@ public class StatisticalCalculator extends Calculator{
     }
 
     /**
-     * Mean double.
+     * Calculate the Mean.
      *
-     * @return the double
+     * @return mean of dataset.
      * @throws CalculatorException the calculator exception
      */
     public double mean() throws  CalculatorException{
@@ -32,9 +32,9 @@ public class StatisticalCalculator extends Calculator{
     }
 
     /**
-     * Standar deviation double.
+     * Calculate Standar deviation.
      *
-     * @return the double
+     * @return standar deviation of dataset.
      * @throws CalculatorException the calculator exception
      */
     public double standarDeviation() throws  CalculatorException{

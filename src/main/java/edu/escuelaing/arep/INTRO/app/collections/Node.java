@@ -1,9 +1,11 @@
 package edu.escuelaing.arep.INTRO.app.collections;
 
 /**
- * The type Node.
-dx
+ * Generic class that represents a node. This node stores a data type N.
  * @param <N> the type parameter
+ *
+ * @author Davor Cortés
+ * @version 1.0
  */
 public class Node<N> {
 
