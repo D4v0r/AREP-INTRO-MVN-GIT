@@ -33,6 +33,7 @@ public class AppTest
      */
     public void testApp()
     {
-        assertTrue( true );
+        String[] fileName = {"dataTest2.txt"};
+        App.main(fileName);
     }
 }
