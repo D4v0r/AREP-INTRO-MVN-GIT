@@ -32,6 +32,7 @@ Ahora debemos dirigirnos al directorio donde fue clonado el respositorio ejecuta
 mvn package
 ````
 
+### Ejecución
 Para ejecutar el programa debemos escribir el siguiente comando:
 
 ````
