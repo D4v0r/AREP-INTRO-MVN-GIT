@@ -1,4 +1,4 @@
-#Taller de Introducción a Maven y Git
+# Taller de Introducción a Maven y Git
 
 ## Descripción
 
@@ -9,17 +9,17 @@ de poner en práctica el uso de las herramientas tecnológicas Maven y Git.
 
 ![](img/PackageApp.png)
 
-##Comenzando
+## Comenzando
 
-###Funcionalidades
+### Funcionalidades
 La calculadora estadística, ofrece el cálculo del promedio de un conjunto de datos y su desviación estandar.
 
-###Prerrequisitos
+### Prerrequisitos
 + Java 8 SE JDK 
 + Maven
 + Git
 
-###Instalación
+### Instalación
 Primero debemos clonar este repositorio con el siguiente comando:
 
 `````
@@ -50,28 +50,28 @@ Para ejecutar el programa con los datos que necesitemos, debemos crear un archiv
 
 Para ver los calculos que el programa nos ofrece sobre nuestros datos debemos ejecutar de nuevo el comando  `mvn exec:java ...`  modificando el parametro `-Dexec.args` con el nombre de nuestro archivo de texto sin olvidar la extensión `.txt`.
 
-###Documentación
+### Documentación
 
-###Entorno de Pruebas
+### Entorno de Pruebas
 
 La pruebas se encuentran automatizadas utilizando el framework JUnit, puede ejecutarlas con el siguiente comando:
 ````
 mvn test
 ````
 
-##Desarrollo
+## Desarrollo
 
 Este proyecto fue desarrollado con:
 + Java 8
 + Maven
 + CircleCI
 
-##Autor
+## Autor
 
 >Davor Javier Cortés Cardozo
 >
 >Estudiante de la Escuela Colombiana de Ingeniería Julio Garavito
 
-##Licencia
+## Licencia
 
 Este proyecto está licenciado bajo la GNU General Public License v3.0, para más información ver la [LICENCIA](LICENSE.txt).
