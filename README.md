@@ -67,6 +67,10 @@ Este proyecto fue desarrollado con:
 + Maven
 + CircleCI
 
+### Automatización
+
+Integración continua usando la tecnología de CircleCi:
+
 [![CircleCI](https://circleci.com/gh/D4v0r/AREP-INTRO-MVN-GIT/tree/circleci-project-setup.svg?style=svg)](https://circleci.com/gh/D4v0r/AREP-INTRO-MVN-GIT/tree/circleci-project-setup)
 
 ## Autor
