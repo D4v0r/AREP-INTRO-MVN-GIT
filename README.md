@@ -67,6 +67,8 @@ Este proyecto fue desarrollado con:
 + Maven
 + CircleCI
 
+[![CircleCI](https://circleci.com/gh/D4v0r/AREP-INTRO-MVN-GIT/tree/circleci-project-setup.svg?style=svg)](https://circleci.com/gh/D4v0r/AREP-INTRO-MVN-GIT/tree/circleci-project-setup)
+
 ## Autor
 
 >Davor Javier Cortés Cardozo
