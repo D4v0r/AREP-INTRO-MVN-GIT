@@ -7,7 +7,7 @@ de poner en práctica el uso de las herramientas tecnológicas Maven y Git.
 
 ## Diseño
 
-![](PackageApp.png)
+![](img/PackageApp.png)
 
 ##Comenzando
 
@@ -53,21 +53,25 @@ Para ver los calculos que el programa nos ofrece sobre nuestros datos debemos ej
 ###Documentación
 
 ###Entorno de Pruebas
+
 La pruebas se encuentran automatizadas utilizando el framework JUnit, puede ejecutarlas con el siguiente comando:
 ````
 mvn test
 ````
 
 ##Desarrollo
+
 Este proyecto fue desarrollado con:
 + Java 8
 + Maven
 + CircleCI
 
 ##Autor
+
 >Davor Javier Cortés Cardozo
 >
 >Estudiante de la Escuela Colombiana de Ingeniería Julio Garavito
 
 ##Licencia
+
 Este proyecto está licenciado bajo la GNU General Public License v3.0, para más información ver la [LICENCIA](LICENSE.txt).
