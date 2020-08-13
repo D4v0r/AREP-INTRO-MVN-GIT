@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este repositorio contiene la implementación de una calculadora estadistica, usando como colección una lista enlazada simple, con el propósito 
+Este repositorio contiene la implementación de una calculadora estadística, usando como colección una lista enlazada simple, con el propósito 
 de poner en práctica el uso de las herramientas tecnológicas Maven y Git.
 
 ## Diseño
@@ -12,7 +12,7 @@ de poner en práctica el uso de las herramientas tecnológicas Maven y Git.
 ## Comenzando
 
 ### Funcionalidades
-La calculadora estadística, ofrece el cálculo del promedio de un conjunto de datos y su desviación estandar.
+La calculadora estadística, ofrece el cálculo del promedio de un conjunto de datos y su desviación estándar.
 
 ### Prerrequisitos
 + Java 8 SE JDK 
