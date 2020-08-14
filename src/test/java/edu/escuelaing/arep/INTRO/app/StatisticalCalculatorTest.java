@@ -3,12 +3,16 @@ package edu.escuelaing.arep.INTRO.app;
 import edu.escuelaing.arep.INTRO.app.calculators.CalculatorException;
 import edu.escuelaing.arep.INTRO.app.calculators.StatisticalCalculator;
 import edu.escuelaing.arep.INTRO.app.collections.LinkedList;
+import edu.escuelaing.arep.INTRO.app.file_handling.FileHandler;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
 /**
  * Unit test for  Statistical calculator.
+ *
+ * @author  Davor Cortes
+ * @version 1.0
  */
 public class StatisticalCalculatorTest extends TestCase {
 
@@ -33,6 +37,7 @@ public class StatisticalCalculatorTest extends TestCase {
         TestSuite suite = new TestSuite( );
         suite.addTest(new StatisticalCalculatorTest("statisticalCalculationTest1"));
         suite.addTest(new StatisticalCalculatorTest("statisticalCalculationTest2"));
+        suite.addTest(new StatisticalCalculatorTest("statisticalCalculationTest3WithDataFromATextFile"));
         suite.addTest(new StatisticalCalculatorTest("statisticalCalculationFailure"));
         return suite;
     }
@@ -72,6 +77,20 @@ public class StatisticalCalculatorTest extends TestCase {
         calculator.putData(dataList);
         try {
             assertTrue(calculator.mean()== 60.32 && calculator.standarDeviation() == 62.26);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Test for file handler and calculator operations.
+     */
+    public static void statisticalCalculationTest3WithDataFromATextFile(){
+        FileHandler fileHandler = new FileHandler();
+        fileHandler.readFile("dataTest1.txt");
+        calculator.putData(fileHandler.getFileData().get(0));
+        try {
+            assertTrue(calculator.mean()== 20.6 && calculator.standarDeviation() == 32.26);
         }catch (Exception e){
             e.printStackTrace();
         }

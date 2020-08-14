@@ -27,20 +27,16 @@ public class App
         try {
             FileHandler fileHandler = new FileHandler();
             fileHandler.readFile(args[0]);
-            int row = 0;
-            for (String[] data: fileHandler.getFileData()
+            int row = 1;
+            for (LinkedList<Double> dataList:  fileHandler.getFileData()
             ) {
-                row ++;
-                LinkedList<Double> dataList = new LinkedList<>();
-                for (String number : data) {
-                    dataList.add(Double.parseDouble(number));
-                }
                 calculator.putData(dataList);
                 System.out.println("--------------------------------------------------------");
                 System.out.println(" + Statistical Calculations for row " + row);
                 System.out.println("    >  Arithmetic Mean: " + calculator.mean());
                 System.out.println("    >  Standard Deviation: " + calculator.standarDeviation());
                 System.out.println("--------------------------------------------------------");
+                row ++;
             }
         } catch (Exception e){
             System.out.println("An error has occurred");

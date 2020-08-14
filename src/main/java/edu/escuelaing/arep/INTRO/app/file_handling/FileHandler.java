@@ -15,7 +15,7 @@ import java.util.ArrayList;
  */
 public class FileHandler {
 
-    private ArrayList<String[]> fileData;
+    private ArrayList<LinkedList<Double>> fileData;
 
     /**
      * Instantiates a new File handler.
@@ -29,7 +29,7 @@ public class FileHandler {
      *
      * @return the file data
      */
-    public ArrayList<String[]> getFileData() {
+    public ArrayList<LinkedList<Double>> getFileData() {
         return fileData;
     }
 
@@ -45,7 +45,11 @@ public class FileHandler {
                 String st = "";
                 while ((st = br.readLine()) != null) {
                     LinkedList<Double> dataList = new LinkedList<Double>();
-                    fileData.add( st.split(" "));
+                    for (String s:st.split(" ")
+                         ) {
+                        dataList.add(Double.parseDouble(s));
+                    }
+                    fileData.add(dataList);
                 }
             } catch (IOException e){
                 System.out.println("An error has occurred while reading the file");

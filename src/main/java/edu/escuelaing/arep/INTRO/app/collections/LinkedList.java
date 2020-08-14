@@ -93,11 +93,4 @@ public class LinkedList<N> implements Iterable<N>{
         };
     }
 
-    @Override
-    public String toString() {
-        return "LinkedList{" +
-                head +
-                '}';
-    }
-
 }

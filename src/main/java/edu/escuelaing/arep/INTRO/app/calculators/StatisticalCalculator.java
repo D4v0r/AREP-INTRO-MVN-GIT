@@ -1,17 +1,23 @@
 package edu.escuelaing.arep.INTRO.app.calculators;
 
 
+import edu.escuelaing.arep.INTRO.app.collections.LinkedList;
+
 /**
  * The type Statistical calculator.
+ *
+ * @author Davor Cortes
+ * @version 1.0
  */
-public class StatisticalCalculator extends Calculator{
+public class StatisticalCalculator {
 
+    private LinkedList<Double> data;
 
     /**
      * Instantiates a new Statistical calculator.
      */
     public StatisticalCalculator() {
-        super();
+        data = new LinkedList<>();
     }
 
     /**
@@ -48,6 +54,23 @@ public class StatisticalCalculator extends Calculator{
         calculation = Math.sqrt(calculation);
         calculation = Math.round(calculation * 100);
         return calculation / 100;
+    }
+
+    /**
+     * Put data.
+     *
+     * @param data the data
+     */
+    public void putData(LinkedList<Double> data){
+        this.data = data;
+    }
+
+
+    /**
+     * Erase data.
+     */
+    public void eraseData(){
+        this.data = null;
     }
 
 }

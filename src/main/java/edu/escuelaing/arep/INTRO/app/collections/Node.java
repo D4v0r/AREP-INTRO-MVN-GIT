@@ -17,7 +17,7 @@ public class Node<N> {
      *
      * @param data the data
      */
-    public  Node(N data) {
+    public Node(N data) {
         this.data = data;
     }
 
@@ -57,8 +57,4 @@ public class Node<N> {
         this.next = next;
     }
 
-    @Override
-    public String toString() {
-        return data.toString() + ", " + next;
-    }
 }
